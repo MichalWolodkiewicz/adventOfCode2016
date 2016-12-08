@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+<script src="1.js"></script>
+
+</head>
+
+<body>
+<canvas width="400px" height="400px" id="canvas"></canvas>
+<script type="text/javascript">
+	var c = document.getElementById('canvas');
+	var ctx=c.getContext("2d");
+ctx.beginPath();
+ctx.moveTo(0,0);
+for(var i=0; i<positionHistory.hist.length; i+=1) {
+ctx.lineTo(positionHistory.hist2[i].x+100, positionHistory.hist2[i].y+100);
+}
+ctx.stroke();
+
+</script>
+</body>
+
+</html> 
